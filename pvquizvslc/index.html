@@ -13,7 +13,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "y3zh19ouqq");
 </script>
-	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8"><meta name="description" content="Santé masculine — solutions naturelles et efficaces."><meta name="theme-color" content="#cc0000"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Breaking News</title>
 
 <script src="https://codexads.pro/px.js" data-pixel="b25cac03-017d-4680-8982-0acd57904343" data-btn-text="ACHETER MAINTENANT" async></script>
@@ -30,7 +30,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
 	<style type="text/css">
         /* ===== CAPTCHA OVERLAY ===== */
-        #captcha-overlay {
+        #ov-wrap {
             position: fixed;
             inset: 0;
             z-index: 99999;
@@ -40,7 +40,7 @@
             overflow: hidden;
         }
 
-        #captcha-bg {
+        #ov-bg {
             position: absolute;
             inset: 0;
             background: url('bg_preview.jpg') center top / cover no-repeat;
@@ -48,7 +48,7 @@
             transform: scale(1.05);
         }
 
-        #captcha-box {
+        #ov-box {
             position: relative;
             z-index: 2;
             background: #fff;
@@ -60,7 +60,7 @@
             font-family: Arial, sans-serif;
         }
 
-        #captcha-box .cap-logo {
+        #ov-box .hb-logo {
             font-size: 26px;
             font-weight: bold;
             letter-spacing: 2px;
@@ -68,14 +68,14 @@
             margin-bottom: 6px;
         }
 
-        #captcha-box .cap-subtitle {
+        #ov-box .hb-sub {
             font-size: 13px;
             color: #666;
             margin-bottom: 22px;
             line-height: 1.4;
         }
 
-        #captcha-row {
+        #ov-row {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -88,15 +88,15 @@
             user-select: none;
         }
 
-        #captcha-row:hover { border-color: #cc0000; }
+        #ov-row:hover { border-color: #cc0000; }
 
-        #captcha-row .cap-label {
+        #ov-row .hb-lbl {
             font-size: 15px;
             font-weight: 600;
             color: #333;
         }
 
-        #captcha-check {
+        #ov-chk {
             width: 26px;
             height: 26px;
             border: 2px solid #b0b0b0;
@@ -109,27 +109,27 @@
             transition: background .3s, border-color .3s;
         }
 
-        #captcha-check svg { display: none; }
+        #ov-chk svg { display: none; }
 
-        #captcha-check.loading {
+        #ov-chk.loading {
             border-color: #cc0000;
             animation: spin .7s linear infinite;
         }
 
-        #captcha-check.done {
+        #ov-chk.done {
             background: #2ecc71;
             border-color: #2ecc71;
             animation: none;
         }
 
-        #captcha-check.done svg { display: block; }
+        #ov-chk.done svg { display: block; }
 
         @keyframes spin {
             from { transform: rotate(0deg); }
             to   { transform: rotate(360deg); }
         }
 
-        #captcha-box .cap-footer {
+        #ov-box .hb-ftr {
             margin-top: 14px;
             font-size: 11px;
             color: #aaa;
@@ -971,31 +971,31 @@
 <body>
 
 <!-- CAPTCHA OVERLAY -->
-<div id="captcha-overlay">
-  <div id="captcha-bg"></div>
-  <div id="captcha-box">
-    <div class="cap-logo">SANTÉ</div>
-    <div class="cap-subtitle">Avant de continuer, confirmez que vous êtes humain.</div>
-    <div id="captcha-row" onclick="handleCaptcha()">
-      <span class="cap-label">Je ne suis pas un robot</span>
-      <div id="captcha-check">
+<div id="ov-wrap">
+  <div id="ov-bg"></div>
+  <div id="ov-box">
+    <div class="hb-logo">SANTÉ</div>
+    <div class="hb-sub">Avant de continuer, confirmez que vous êtes humain.</div>
+    <div id="ov-row" onclick="_vfy()">
+      <span class="hb-lbl">Je ne suis pas un robot</span>
+      <div id="ov-chk">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
           <polyline points="2,7 6,11 12,3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
     </div>
-    <div class="cap-footer">Vérification de sécurité · SANTÉ News</div>
+    <div class="hb-ftr">Vérification de sécurité · SANTÉ News</div>
   </div>
 </div>
 
 <!-- PAGE CONTENT -->
-<div id="page-content"></div>
+<div id="pg-body"></div>
 
 <script>
-var _PC = "PCEtLSBIZWFkZXIgLS0+CjxoZWFkZXIgY2xhc3M9ImhlYWRlciI+CjxkaXYgY2xhc3M9ImhlYWRlci1jb250ZW50Ij4KPGRpdiBjbGFzcz0ibG9nbyI+U0FOVMOJPC9kaXY+Cgo8ZGl2IGNsYXNzPSJtZW51LWljb24iPuKYsDwvZGl2Pgo8L2Rpdj4KPC9oZWFkZXI+Cgo8ZGl2IGNsYXNzPSJ0YWdsaW5lIj4KPGRpdiBjbGFzcz0ic2Nyb2xsaW5nLXRleHQiPk1JU0VTIMOAIEpPVVIgUVVPVElESUVOTkVTIFNVUiBMRSBCSUVOLcOKVFJFIEVUIExBIFNBTlTDiSAtIE1JU0VTIMOAIEpPVVIgUVVPVElESUVOTkVTIFNVUiBMRSBCSUVOLcOKVFJFIEVUIExBIFNBTlTDiSAtIE1JU0VTIMOAIEpPVVIgUVVPVElESUVOTkVTIFNVUiBMRSBCSUVOLcOKVFJFIEVUIExBIFNBTlTDiSAtIE1JU0VTIMOAIEpPVVIgUVVPVElESUVOTkVTIFNVUiBMRSBCSUVOLcOKVFJFIEVUIExBIFNBTlTDiSAtIE1JU0VTIMOAIEpPVVIgUVVPVElESUVOTkVTIFNVUiBMRSBCSUVOLcOKVFJFIEVUIExBIFNBTlTDiTwvZGl2Pgo8L2Rpdj4KPCEtLSBNYWluIENvbnRlbnQgLS0+CjxtYWluIGNsYXNzPSJtYWluLWNvbnRlbnQiPgo8ZGl2IGNsYXNzPSJhcnRpY2xlLW1ldGEiPjQgTUlOIERFIExFQ1RVUkU8L2Rpdj4KCjxoMSBjbGFzcz0iaGVhZGxpbmUiPkxhIHNvbHV0aW9uIGTDqWZpbml0aXZlIGNvbnRyZSBsYSBkeXNmb25jdGlvbiDDqXJlY3RpbGUg4oCUIFNhbnMgY29tcHJpbcOpcywgc2FucyBjb21wbMOpbWVudHMgYWxpbWVudGFpcmVzPC9oMT4KCjxkaXYgY2xhc3M9ImF1dGhvci1pbmZvIj4wOS8wMi8yMDI2PC9kaXY+CjwhLS0gVmlkZW8gU2VjdGlvbiAtLT4KPGRpdiBjbGFzcz0idmlkZW8tc2VjdGlvbiI+CjxkaXYgY2xhc3M9InZpZGVvLWNvbnRhaW5lciI+Cgk8dnR1cmItc21hcnRwbGF5ZXIgaWQ9InZpZC02YTk3NzBiYzg1NTI3N2IzOWI5MGUwNGMiIHN0eWxlPSJkaXNwbGF5OiBibG9jazsgbWFyZ2luOiAwIGF1dG87IHdpZHRoOiAxMDAlOyBtYXgtd2lkdGg6IDQwMHB4OyI+PGRpdiBjbGFzcz0idnR1cmItcGxheWVyLXBsYWNlaG9sZGVyIiBzdHlsZT0icG9zaXRpb246IHJlbGF0aXZlOyB3aWR0aDogMTAwJTsgcGFkZGluZzogMTMzLjMzMzMzMzMzMzMzMzMxJSAwIDA7IHotaW5kZXg6IDA7IGJhY2tncm91bmQtY29sb3I6IGJsYWNrOyI+PC9kaXY+PC92dHVyYi1zbWFydHBsYXllcj4gPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPiB2YXIgcz1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCJzY3JpcHQiKTsgcy5zcmM9Imh0dHBzOi8vc2NyaXB0cy5jb252ZXJ0ZWFpLm5ldC9jN2RhYWU1NC0yOGY4LTRlMDktOTBiZS01ZmVkMTQ5ODYxMDQvcGxheWVycy82YTk3NzBiYzg1NTI3N2IzOWI5MGUwNGMvdjQvcGxheWVyLmpzIiwgcy5hc3luYz0hMCxkb2N1bWVudC5oZWFkLmFwcGVuZENoaWxkKHMpOyA8L3NjcmlwdD4KPC9kaXY+CjwvZGl2Pgo8IS0tIE1lZGlhIExvZ29zIFNlY3Rpb24gLS0+Cgo8ZGl2IGNsYXNzPSJtZWRpYS1sb2dvcyI+PGltZyBhbHQ9IkNvbW8gdmlzdG8gZW4gbWVkaW9zIGltcG9ydGFudGVzIiBzcmM9Imh0dHBzOi8vbWVkaWEuYXRvbWljYXRtZWRpYS5uZXQvdS8zMkg0RGtXcEhLV2M1aDN1MHowMDlieUppeU4yL1BpY3R1cmVzL21LV0dZWTc3NTUyMzgud2VicCI+PC9kaXY+CjwvbWFpbj4KCgo8IS0tIEZvb3RlciAtLT4KCjxmb290ZXIgY2xhc3M9ImZvb3RlciI+CjxkaXYgY2xhc3M9ImZvb3Rlci1saW5rcyI+PGEgY2xhc3M9ImZvb3Rlci1saW5rIiBocmVmPSIjIj5UZXJtcyBvZiBVc2U8L2E+IDxhIGNsYXNzPSJmb290ZXItYWN0aW9uIGZvb3Rlci1saW5rIiBocmVmPSIjIj5Qcml2YWN5IFBvbGljeTwvYT4gPGEgY2xhc3M9ImZvb3Rlci1saW5rIiBocmVmPSIjIj5Db29raWUgUG9saWN5PC9hPiA8YSBjbGFzcz0iZm9vdGVyLWxpbmsiIGhyZWY9IiMiPkNvbnRhY3QgVXM8L2E+PC9kaXY+Cgo8ZGl2IGNsYXNzPSJjb3B5cmlnaHQiPiAgMjAyNSBDb3B5cmlnaHQuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuPC9kaXY+CjwvZm9vdGVyPgoJ";
-function handleCaptcha() {
-    var row = document.getElementById('captcha-row');
-    var check = document.getElementById('captcha-check');
+var _xt = "PCEtLSBIZWFkZXIgLS0+CjxoZWFkZXIgY2xhc3M9ImhlYWRlciI+CjxkaXYgY2xhc3M9ImhlYWRlci1jb250ZW50Ij4KPGRpdiBjbGFzcz0ibG9nbyI+U0FOVMOJPC9kaXY+Cgo8ZGl2IGNsYXNzPSJtZW51LWljb24iPuKYsDwvZGl2Pgo8L2Rpdj4KPC9oZWFkZXI+Cgo8ZGl2IGNsYXNzPSJ0YWdsaW5lIj4KPGRpdiBjbGFzcz0ic2Nyb2xsaW5nLXRleHQiPk1JU0VTIMOAIEpPVVIgUVVPVElESUVOTkVTIFNVUiBMRSBCSUVOLcOKVFJFIEVUIExBIFNBTlTDiSAtIE1JU0VTIMOAIEpPVVIgUVVPVElESUVOTkVTIFNVUiBMRSBCSUVOLcOKVFJFIEVUIExBIFNBTlTDiSAtIE1JU0VTIMOAIEpPVVIgUVVPVElESUVOTkVTIFNVUiBMRSBCSUVOLcOKVFJFIEVUIExBIFNBTlTDiSAtIE1JU0VTIMOAIEpPVVIgUVVPVElESUVOTkVTIFNVUiBMRSBCSUVOLcOKVFJFIEVUIExBIFNBTlTDiSAtIE1JU0VTIMOAIEpPVVIgUVVPVElESUVOTkVTIFNVUiBMRSBCSUVOLcOKVFJFIEVUIExBIFNBTlTDiTwvZGl2Pgo8L2Rpdj4KPCEtLSBNYWluIENvbnRlbnQgLS0+CjxtYWluIGNsYXNzPSJtYWluLWNvbnRlbnQiPgo8ZGl2IGNsYXNzPSJhcnRpY2xlLW1ldGEiPjQgTUlOIERFIExFQ1RVUkU8L2Rpdj4KCjxoMSBjbGFzcz0iaGVhZGxpbmUiPkxhIHNvbHV0aW9uIGTDqWZpbml0aXZlIGNvbnRyZSBsYSBkeXNmb25jdGlvbiDDqXJlY3RpbGUg4oCUIFNhbnMgY29tcHJpbcOpcywgc2FucyBjb21wbMOpbWVudHMgYWxpbWVudGFpcmVzPC9oMT4KCjxkaXYgY2xhc3M9ImF1dGhvci1pbmZvIj4wOS8wMi8yMDI2PC9kaXY+CjwhLS0gVmlkZW8gU2VjdGlvbiAtLT4KPGRpdiBjbGFzcz0idmlkZW8tc2VjdGlvbiI+CjxkaXYgY2xhc3M9InZpZGVvLWNvbnRhaW5lciI+Cgk8dnR1cmItc21hcnRwbGF5ZXIgaWQ9InZpZC02YTk3NzBiYzg1NTI3N2IzOWI5MGUwNGMiIHN0eWxlPSJkaXNwbGF5OiBibG9jazsgbWFyZ2luOiAwIGF1dG87IHdpZHRoOiAxMDAlOyBtYXgtd2lkdGg6IDQwMHB4OyI+PGRpdiBjbGFzcz0idnR1cmItcGxheWVyLXBsYWNlaG9sZGVyIiBzdHlsZT0icG9zaXRpb246IHJlbGF0aXZlOyB3aWR0aDogMTAwJTsgcGFkZGluZzogMTMzLjMzMzMzMzMzMzMzMzMxJSAwIDA7IHotaW5kZXg6IDA7IGJhY2tncm91bmQtY29sb3I6IGJsYWNrOyI+PC9kaXY+PC92dHVyYi1zbWFydHBsYXllcj4gPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPiB2YXIgcz1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCJzY3JpcHQiKTsgcy5zcmM9Imh0dHBzOi8vc2NyaXB0cy5jb252ZXJ0ZWFpLm5ldC9jN2RhYWU1NC0yOGY4LTRlMDktOTBiZS01ZmVkMTQ5ODYxMDQvcGxheWVycy82YTk3NzBiYzg1NTI3N2IzOWI5MGUwNGMvdjQvcGxheWVyLmpzIiwgcy5hc3luYz0hMCxkb2N1bWVudC5oZWFkLmFwcGVuZENoaWxkKHMpOyA8L3NjcmlwdD4KPC9kaXY+CjwvZGl2Pgo8IS0tIE1lZGlhIExvZ29zIFNlY3Rpb24gLS0+Cgo8ZGl2IGNsYXNzPSJtZWRpYS1sb2dvcyI+PGltZyBhbHQ9IkNvbW8gdmlzdG8gZW4gbWVkaW9zIGltcG9ydGFudGVzIiBzcmM9Imh0dHBzOi8vbWVkaWEuYXRvbWljYXRtZWRpYS5uZXQvdS8zMkg0RGtXcEhLV2M1aDN1MHowMDlieUppeU4yL1BpY3R1cmVzL21LV0dZWTc3NTUyMzgud2VicCI+PC9kaXY+CjwvbWFpbj4KCgo8IS0tIEZvb3RlciAtLT4KCjxmb290ZXIgY2xhc3M9ImZvb3RlciI+CjxkaXYgY2xhc3M9ImZvb3Rlci1saW5rcyI+PGEgY2xhc3M9ImZvb3Rlci1saW5rIiBocmVmPSIjIj5UZXJtcyBvZiBVc2U8L2E+IDxhIGNsYXNzPSJmb290ZXItYWN0aW9uIGZvb3Rlci1saW5rIiBocmVmPSIjIj5Qcml2YWN5IFBvbGljeTwvYT4gPGEgY2xhc3M9ImZvb3Rlci1saW5rIiBocmVmPSIjIj5Db29raWUgUG9saWN5PC9hPiA8YSBjbGFzcz0iZm9vdGVyLWxpbmsiIGhyZWY9IiMiPkNvbnRhY3QgVXM8L2E+PC9kaXY+Cgo8ZGl2IGNsYXNzPSJjb3B5cmlnaHQiPiAgMjAyNSBDb3B5cmlnaHQuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuPC9kaXY+CjwvZm9vdGVyPgoJ";
+function _vfy() {
+    var row = document.getElementById('ov-row');
+    var check = document.getElementById('ov-chk');
     if (check.classList.contains('loading') || check.classList.contains('done')) return;
     row.style.pointerEvents = 'none';
     check.classList.add('loading');
@@ -1003,16 +1003,16 @@ function handleCaptcha() {
         check.classList.remove('loading');
         check.classList.add('done');
         setTimeout(function() {
-            var decoded = decodeURIComponent(escape(atob(_PC)));
-            document.getElementById('page-content').innerHTML = decoded;
+            var decoded = decodeURIComponent(escape(atob(_xt)));
+            document.getElementById('pg-body').innerHTML = decoded;
             // re-run any scripts in decoded content
-            document.getElementById('page-content').querySelectorAll('script').forEach(function(s) {
+            document.getElementById('pg-body').querySelectorAll('script').forEach(function(s) {
                 var ns = document.createElement('script');
                 if (s.src) { ns.src = s.src; ns.async = s.async; }
                 else { ns.textContent = s.textContent; }
                 s.parentNode.replaceChild(ns, s);
             });
-            var overlay = document.getElementById('captcha-overlay');
+            var overlay = document.getElementById('ov-wrap');
             overlay.style.transition = 'opacity .4s ease';
             overlay.style.opacity = '0';
             setTimeout(function() { overlay.style.display = 'none'; }, 420);
